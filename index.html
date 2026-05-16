@@ -19,6 +19,7 @@
         body {
             background-color: #ffffff;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            min-height: 100vh;
         }
 
         /* Header Styles */
@@ -167,7 +168,7 @@
 
         /* Stats Section */
         .stats-section {
-            padding: 40px 0 60px 0;
+            padding: 20px 0 40px 0;
         }
 
         .stats-container {
@@ -192,6 +193,12 @@
             font-size: 14px;
             display: block;
             margin-top: 5px;
+        }
+
+        /* Remove bottom spacing */
+        .no-bottom-margin {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
         }
 
         /* Mobile Navigation Toggle */
@@ -238,7 +245,7 @@
             
             .content-card {
                 padding: 20px;
-                margin-bottom: 30px;
+                margin-bottom: 0;
             }
             
             .email-form {
@@ -268,6 +275,10 @@
             
             .stat-label {
                 font-size: 12px;
+            }
+            
+            .stats-section {
+                padding: 20px 0 20px 0;
             }
         }
 
@@ -299,6 +310,10 @@
             .stat-number {
                 font-size: 24px;
             }
+            
+            .stats-section {
+                padding: 10px 0 15px 0;
+            }
         }
 
         /* Animation and hover effects */
@@ -325,6 +340,11 @@
         
         .hero-image:hover {
             transform: scale(1.02);
+        }
+
+        /* Supprimer la marge du container en bas */
+        .container:last-child {
+            margin-bottom: 0 !important;
         }
     </style>
 </head>
@@ -445,39 +465,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Optional: Add some spacing and additional content to show responsiveness -->
-    <div class="container mb-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-home fa-3x mb-3" style="color: #6f433d;"></i>
-                        <h5 class="card-title">Modern Design</h5>
-                        <p class="card-text text-muted">Contemporary homes with elegant architecture</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-location-dot fa-3x mb-3" style="color: #6f433d;"></i>
-                        <h5 class="card-title">Prime Locations</h5>
-                        <p class="card-text text-muted">Best neighborhoods in the city</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-key fa-3x mb-3" style="color: #6f433d;"></i>
-                        <h5 class="card-title">Secure Investment</h5>
-                        <p class="card-text text-muted">Safe and profitable real estate</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
